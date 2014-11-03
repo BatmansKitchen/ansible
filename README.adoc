@@ -1,0 +1,20 @@
+= Ansible
+
+Ansible playbooks for CCDC/CTF machines
+
+== About Ansible
+Ansible is a python thing that uses only SSH to setup machines remotely, or
+python to set up a local machine. Machine states are described using yaml (yaml
+= yet another markup language) and ansible does the smallest amount of work
+possible to get them to that state.
+
+== How these are useful
+These are ansible roles that are resuable descriptions of machines. For
+example, a pen-testing role with a bunch of offensive tools. Another could be a
+secure mail server, another an apache server, and so on. From these, it becomes
+easy to point at a machine and say "act like this" theoretically making it
+trivial to spin up useful machines.
+
+== Setup to use
+If you're running it on the localhost, install ansible and its dependencies
+first, then run a playbook assigning the desired role to localhost.
